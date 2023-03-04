@@ -1,3 +1,9 @@
+:root {
+  --lightgrey-background-color: rgb(249, 249, 249);
+  --fontcolor-color: rgb(58, 58, 58);
+  --inlinepadding-padding-inline: 5rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -22,6 +28,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 35vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,5 +56,130 @@
 }
 
 .right {
-  
+  width: 65vw;
+  background-color: var(--lightgrey-background-color);
+}
+
+.heading {
+  color: var(--fontcolor-color);
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-inline: var(--inlinepadding-padding-inline);
+}
+
+.heading > h2 {
+  padding-top: 3rem;
+}
+
+.form {
+  background-color: white;
+  color: var(--fontcolor-color);
+  height: 30vh;
+  padding-inline: var(--inlinepadding-padding-inline);
+  padding-top: 1rem;
+  box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.32);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form > h2 {
+  position: relative;
+  top: -4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  padding-right: 5rem;
+}
+
+label {
+  font-size: .67rem;
+  font-weight: 800;
+  letter-spacing: .16rem;
+  color: rgb(93, 93, 93);
+}
+
+input {
+  height: 1.7rem;
+  width: 300px;
+  border:1px solid lightgray;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding-inline: 8px;
+}
+
+.create-account {
+  padding-inline: var(--inlinepadding-padding-inline);
+  padding-top: 2rem;
+}
+
+button {
+  background-color: #596D48;
+  color: white;
+  height: 3rem;
+  width: 14rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.32);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #748f5c;
+  transition: .4s;
+}
+
+button:active {
+  background-color: #596D48;
+}
+
+.create-account > p {
+  margin-top: 35px;
+  font-weight: 700;
+}
+
+.create-account > a {
+  color: #596D48;
+}
+
+a:visited {
+  color: #596D48;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
