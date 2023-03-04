@@ -58,6 +58,8 @@
 .right {
   width: 65vw;
   background-color: var(--lightgrey-background-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .heading {
