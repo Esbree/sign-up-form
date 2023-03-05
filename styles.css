@@ -130,6 +130,10 @@ input {
   padding-inline: 8px;
 }
 
+input:invalid {
+  border-color: red;
+}
+
 .create-account {
   padding-inline: var(--inlinepadding-padding-inline);
   padding-top: 2rem;
